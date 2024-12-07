@@ -1,7 +1,7 @@
 import RandomDog from "./Data";
 import { SignIn, SignOut } from "./Auth";
-
 import { useAuthentication } from "./services/authServices";
+import Save from "./Save";
 import "./App.css";
 
 const App = () => {
@@ -19,7 +19,8 @@ const App = () => {
         <h1 onClick = {startOver}>Random Dog Info</h1>
         <h1>{user ? <SignOut /> : <SignIn />}</h1>
       </header>
-      <RandomDog/>       
+      <RandomDog/>  
+      <Save/>     
     </div>
   );
 };
